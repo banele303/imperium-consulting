@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import Link from "next/link"
 import Image from "next/image"
+import ServiceRequirements from "@/components/ServiceRequirements"
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
@@ -138,6 +139,9 @@ export default function BusinessRegistrationPage() {
           </motion.div>
         </div>
       </div>
+
+      {/* Requirements Section */}
+      <ServiceRequirements serviceKey="business-registration" />
     </div>
   );
 }

@@ -7,6 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import ServiceRequirements from "@/components/ServiceRequirements"
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
@@ -128,6 +129,9 @@ export default function ServicesPage() {
           </motion.div>
         </div>
       </section>
+
+      {/* Requirements Section */}
+      <ServiceRequirements showAll={true} />
 
       {/* CTA Section */}
       <section className="py-16 bg-white">

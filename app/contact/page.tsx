@@ -18,7 +18,7 @@ const fadeInUp = {
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50">
 
 
       {/* Hero Section */}
@@ -153,9 +153,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg">Business Hours</h3>
-                      <p className="text-gray-600">Monday - Friday: 8:00 AM - 5:00 PM</p>
-                      <p className="text-gray-600">Saturday: 9:00 AM - 1:00 PM</p>
-                      <p className="text-gray-600">Sunday: Closed</p>
+                      <p className="text-gray-600">Monday - Thursday: 08:30 - 16:30</p>
+                      <p className="text-gray-600">Friday - Sunday: Closed</p>
                     </div>
                   </div>
                 </CardContent>

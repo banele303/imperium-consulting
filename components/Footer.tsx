@@ -48,62 +48,72 @@ const Footer = () => {
           <h4 className="text-lg font-semibold text-gray-200 tracking-wider uppercase text-center mb-6">Our Partners</h4>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
             <div className="flex items-center justify-center p-4 bg-white rounded-lg hover:shadow-lg transition-shadow">
-              <Image 
-                src="/logos/CIDB_LogoCMYK-1.png" 
-                alt="CIDB Logo" 
-                width={120} 
-                height={90} 
+
+
+              <Image
+                src="/logos/Cipc logo.png"
+                alt="CIPC Logo"
+                width={120}
+                height={90}
+                className="object-contain max-h-20"
+              />
+
+
+
+
+            </div>
+            <div className="flex items-center justify-center p-4 bg-white rounded-lg hover:shadow-lg transition-shadow">
+              <Image
+                src="/logos/CIDB_LogoCMYK-1.png"
+                alt="CIDB Logo"
+                width={120}
+                height={90}
+                className="object-contain max-h-20"
+              />
+
+
+
+            </div>
+
+            <div className="flex items-center justify-center p-4 bg-white rounded-lg hover:shadow-lg transition-shadow">
+              <Image
+                src="/logos/CSD Logo.png"
+                alt="CSD Logo"
+                width={120}
+                height={90}
                 className="object-contain max-h-20"
               />
             </div>
             <div className="flex items-center justify-center p-4 bg-white rounded-lg hover:shadow-lg transition-shadow">
-              <Image 
-                src="/logos/CSD Logo.png" 
-                alt="CSD Logo" 
-                width={120} 
-                height={90} 
+              <Image
+                src="/logos/labour logo.png"
+                alt="Labour Logo"
+                width={120}
+                height={90}
                 className="object-contain max-h-20"
               />
             </div>
             <div className="flex items-center justify-center p-4 bg-white rounded-lg hover:shadow-lg transition-shadow">
-              <Image 
-                src="/logos/Cipc logo.png" 
-                alt="CIPC Logo" 
-                width={120} 
-                height={90} 
+              <Image
+                src="/logos/fnb.jpeg"
+                alt="Company Logo"
+                width={120}
+                height={90}
                 className="object-contain max-h-20"
               />
             </div>
             <div className="flex items-center justify-center p-4 bg-white rounded-lg hover:shadow-lg transition-shadow">
-              <Image 
-                src="/logos/labour logo.png" 
-                alt="Labour Logo" 
-                width={120} 
-                height={90} 
-                className="object-contain max-h-20"
-              />
-            </div>
-            <div className="flex items-center justify-center p-4 bg-white rounded-lg hover:shadow-lg transition-shadow">
-              <Image 
-                src="/logos/logo.jpeg" 
-                alt="Company Logo" 
-                width={120} 
-                height={90} 
-                className="object-contain max-h-20"
-              />
-            </div>
-            <div className="flex items-center justify-center p-4 bg-white rounded-lg hover:shadow-lg transition-shadow">
-              <Image 
-                src="/logos/sarslogo.png" 
-                alt="SARS Logo" 
-                width={120} 
-                height={90} 
+              <Image
+                src="/logos/sarslogo.png"
+                alt="SARS Logo"
+                width={120}
+                height={90}
                 className="object-contain max-h-20"
               />
             </div>
           </div>
         </div>
-        
+
         <div className="mt-8 border-t border-gray-800 pt-8 text-center text-gray-500">
           <p>&copy; {new Date().getFullYear()} Imperial Consulting. All rights reserved.</p>
         </div>

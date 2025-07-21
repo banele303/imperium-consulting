@@ -6,36 +6,40 @@ import { Button } from '@/components/ui/button'
 
 const ptyPackages = [
   {
-    name: 'Starter',
-    price: 'R450',
+    name: 'FOUNDER',
+    price: 'R650',
     features: [
-      'Company Name Reservation',
-      'Company Registration Certificate (COR14.3)',
-      'Income Tax Number',
+      'Business Registration',
+      'SARS Income Tax No',
+      'Business Certificate',
     ],
     highlight: false,
     cta: 'Get Started',
   },
   {
-    name: 'Business',
-    price: 'R850',
+    name: 'RUNNER',
+    price: 'R1300',
     features: [
-      'All features in Starter',
-      'Share Certificates for all directors',
-      'B-BBEE Affidavit',
-      'Free .co.za Domain',
+      'Business Registration',
+      'SARS Income Tax No',
+      'Business Certificate',
+      '2 Business Logo Templates',
+      'B-BBEE Certificate',
     ],
     highlight: true,
     cta: 'Choose Plan',
   },
   {
-    name: 'Enterprise',
-    price: 'R1250',
+    name: 'EMPIRE',
+    price: 'R1950',
     features: [
-      'All features in Business',
-      'CSD Registration',
+      'Business Registration',
+      'SARS Income Tax No',
+      'Business Certificate',
+      '2 Business Logos Templates',
+      'B-BBEE Certificate',
       'Tax Clearance Certificate',
-      'Business Profile',
+      'CSD Report',
     ],
     highlight: false,
     cta: 'Get Started',
@@ -57,11 +61,11 @@ const cardVariants: Variants = {
 
 const PricingPty = () => {
   return (
-    <section className="py-32 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 relative overflow-hidden">
+    <section className="py-32 bg-gradient-to-br from-green-50 via-blue-50 to-green-100 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-blue-300 to-indigo-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
-        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-purple-300 to-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse animation-delay-2000"></div>
+        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-green-300 to-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-blue-300 to-green-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse animation-delay-2000"></div>
       </div>
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -71,7 +75,7 @@ const PricingPty = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="inline-block px-6 py-3 bg-gradient-to-r from-blue-100 to-indigo-100 rounded-full text-blue-700 text-sm font-semibold mb-6"
+            className="inline-block px-6 py-3 bg-gradient-to-r from-green-100 to-blue-100 rounded-full text-green-700 text-sm font-semibold mb-6"
           >
             🏢 Private Company Solutions
           </motion.div>
@@ -84,7 +88,7 @@ const PricingPty = () => {
             className="text-5xl lg:text-6xl font-black text-gray-900 tracking-tight mb-6"
           >
             Private Company
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 mt-2">Registration Packages</span>
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-600 via-blue-600 to-green-700 mt-2">Registration Packages</span>
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -112,12 +116,12 @@ const PricingPty = () => {
               <div className="relative bg-white/70 backdrop-blur-md rounded-3xl overflow-hidden shadow-2xl border border-white/50 hover:bg-white/80 transition-all duration-500 flex flex-col h-full">
                 {/* Gradient border effect for highlighted package */}
                 {pkg.highlight && (
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 rounded-3xl opacity-100 blur-sm"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-green-500 via-blue-500 to-green-600 rounded-3xl opacity-100 blur-sm"></div>
                 )}
                 
                 <div className={`relative ${pkg.highlight ? 'm-1 bg-white/90 backdrop-blur-sm rounded-3xl' : ''} flex flex-col h-full`}>
                   {/* Header */}
-                  <div className={`relative p-8 ${pkg.highlight ? 'bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500' : 'bg-gradient-to-r from-slate-800 to-gray-900'} rounded-t-3xl`}>
+                  <div className={`relative p-8 ${pkg.highlight ? 'bg-gradient-to-r from-green-500 via-blue-500 to-green-600' : 'bg-gradient-to-r from-slate-800 to-blue-900'} rounded-t-3xl`}>
                     {pkg.highlight && (
                       <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
                         ⭐ MOST POPULAR
@@ -142,7 +146,7 @@ const PricingPty = () => {
                           transition={{ delay: 0.1 * idx, duration: 0.4 }}
                           className="flex items-start group-hover:translate-x-1 transition-transform duration-300"
                         >
-                          <div className={`w-6 h-6 rounded-full flex items-center justify-center mr-3 flex-shrink-0 ${pkg.highlight ? 'bg-gradient-to-r from-blue-500 to-indigo-500' : 'bg-gradient-to-r from-gray-600 to-gray-700'}`}>
+                          <div className={`w-6 h-6 rounded-full flex items-center justify-center mr-3 flex-shrink-0 ${pkg.highlight ? 'bg-gradient-to-r from-green-500 to-blue-500' : 'bg-gradient-to-r from-green-600 to-blue-700'}`}>
                             <Check className="h-4 w-4 text-white" />
                           </div>
                           <span className="text-gray-700 font-medium">{feature}</span>
@@ -157,8 +161,8 @@ const PricingPty = () => {
                       size="lg" 
                       className={`w-full font-bold text-lg transform hover:scale-105 transition-all duration-300 shadow-xl ${
                         pkg.highlight 
-                          ? 'bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 hover:from-blue-700 hover:via-indigo-700 hover:to-purple-700 text-white' 
-                          : 'bg-gradient-to-r from-slate-700 to-gray-800 hover:from-slate-800 hover:to-gray-900 text-white'
+                          ? 'bg-gradient-to-r from-green-600 via-blue-600 to-green-700 hover:from-green-700 hover:via-blue-700 hover:to-green-800 text-white' 
+                          : 'bg-gradient-to-r from-green-700 to-blue-800 hover:from-green-800 hover:to-blue-900 text-white'
                       }`}
                     >
                       <span className="relative z-10">{pkg.cta}</span>
