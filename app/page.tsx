@@ -44,12 +44,12 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-green-900 dark:from-gray-900 dark:via-blue-800 dark:to-green-800 pt-24 pb-32">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-green-800 via-green-700 to-green-600 dark:from-green-900 dark:via-green-800 dark:to-green-600 pt-24 pb-32">
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-r from-green-400 to-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
-          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-r from-blue-400 to-green-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-2000"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-green-400 to-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse animation-delay-4000"></div>
+          <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-r from-green-600 to-green-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
+          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-r from-green-400 to-green-600 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-2000"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-green-600 to-green-500 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse animation-delay-4000"></div>
         </div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -64,17 +64,17 @@ export default function HomePage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.6 }}
-                className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 text-green-300 text-sm font-medium mb-6"
+                className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 text-green-400 text-sm font-medium mb-6"
               >
                 🚀 South Africa's Premier Business Solutions
               </motion.div>
               
               <h1 className="text-6xl lg:text-7xl font-black text-white leading-tight tracking-tight">
                 Navigate
-                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-400 to-green-500 mt-2 animate-gradient-x">
+                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-600 via-green-400 to-green-600 mt-2 animate-gradient-x">
                   Compliance
                 </span>
-                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400 mt-2">
+                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-green-600 mt-2">
                   With Ease
                 </span>
               </h1>
@@ -84,14 +84,14 @@ export default function HomePage() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 mt-12">
-                <Button asChild size="lg" className="group relative bg-gradient-to-r from-green-500 via-blue-500 to-green-600 hover:from-green-600 hover:via-blue-600 hover:to-green-700 text-white shadow-2xl transform hover:scale-105 transition-all duration-300 px-8 py-4 text-lg font-semibold">
+                <Button asChild size="lg" className="group relative bg-gradient-to-r from-green-600 via-green-500 to-green-600 hover:from-green-700 hover:via-green-600 hover:to-green-700 text-white shadow-2xl transform hover:scale-105 transition-all duration-300 px-8 py-4 text-lg font-semibold">
                   <Link href="/services">
                     <span className="relative z-10">Explore Services</span>
                     <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform duration-300" />
-                    <div className="absolute inset-0 bg-gradient-to-r from-green-600 via-blue-600 to-green-700 rounded-lg blur opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-green-700 via-green-600 to-green-700 rounded-lg blur opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="group border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 backdrop-blur-sm shadow-2xl transform hover:scale-105 transition-all duration-300 px-8 py-4 text-lg font-semibold">
+                <Button asChild variant="outline" size="lg" className="group border-2 border-white/30  hover:bg-white/10 hover:border-white/50 backdrop-blur-sm shadow-2xl transform hover:scale-105 transition-all duration-300 px-8 py-4 text-lg font-semibold">
                   <Link href="/contact">
                     <span className="relative z-10">Get a Free Quote</span>
                     <div className="absolute inset-0 bg-white/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
