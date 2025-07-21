@@ -47,7 +47,7 @@ export default function HomePage() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-32">
         {/* Hero Background Image */}
         <img
-          src="/imperium-bg.jpeg"
+          src="/new-hero.jpeg"
           alt="Imperium Consulting Hero Background"
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
@@ -123,34 +123,128 @@ export default function HomePage() {
                   </div>
                   
                   <div className="space-y-4">
-                    {services.slice(0, 3).map((service, index) => (
-                      <motion.div 
-                        key={index}
-                        initial={{ opacity: 0, x: 20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: 0.6 + index * 0.1, duration: 0.4 }}
-                        className="group flex items-center justify-between p-4 bg-white/5 hover:bg-white/10 rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300 cursor-pointer"
-                      >
-                        <div className="flex items-center">
-                          <div className="w-10 h-10 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
-                            <service.icon className="h-5 w-5 text-white" />
-                          </div>
-                          <span className="text-white font-medium group-hover:text-cyan-300 transition-colors duration-300">{service.title}</span>
+                    {/* All company registration packages with Next.js Link */}
+                    <motion.div 
+                      initial={{ opacity: 0, x: 20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: 0.6, duration: 0.4 }}
+                      className="group flex items-center justify-between p-4 bg-white/5 hover:bg-white/10 rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300 cursor-pointer"
+                    >
+                      <div className="flex items-center">
+                        <div className="w-10 h-10 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                          <Briefcase className="h-5 w-5 text-white" />
                         </div>
-                        <div className="flex items-center">
-                          <span className="text-emerald-400 font-bold text-lg mr-2">{service.price}</span>
-                          <ArrowRight className="h-4 w-4 text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300" />
+                        <span className="text-white font-medium group-hover:text-cyan-300 transition-colors duration-300">Business Registration</span>
+                      </div>
+                      <div className="flex items-center">
+                        <span className="text-emerald-400 font-bold text-lg mr-2">R650</span>
+                        <Link href="/services/business-registration" className="text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex items-center">
+                          <span className="mr-2">Choose Package</span>
+                          <ArrowRight className="h-4 w-4" />
+                        </Link>
+                      </div>
+                    </motion.div>
+                    <motion.div 
+                      initial={{ opacity: 0, x: 20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: 0.7, duration: 0.4 }}
+                      className="group flex items-center justify-between p-4 bg-white/5 hover:bg-white/10 rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300 cursor-pointer"
+                    >
+                      <div className="flex items-center">
+                        <div className="w-10 h-10 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                          <Users className="h-5 w-5 text-white" />
                         </div>
-                      </motion.div>
-                    ))}
+                        <span className="text-white font-medium group-hover:text-cyan-300 transition-colors duration-300">Beneficial Ownership</span>
+                      </div>
+                      <div className="flex items-center">
+                        <span className="text-emerald-400 font-bold text-lg mr-2">R500</span>
+                        <Link href="/services/beneficial-ownership" className="text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex items-center">
+                          <span className="mr-2">Choose Package</span>
+                          <ArrowRight className="h-4 w-4" />
+                        </Link>
+                      </div>
+                    </motion.div>
+                    <motion.div 
+                      initial={{ opacity: 0, x: 20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: 0.8, duration: 0.4 }}
+                      className="group flex items-center justify-between p-4 bg-white/5 hover:bg-white/10 rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300 cursor-pointer"
+                    >
+                      <div className="flex items-center">
+                        <div className="w-10 h-10 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                          <FileText className="h-5 w-5 text-white" />
+                        </div>
+                        <span className="text-white font-medium group-hover:text-cyan-300 transition-colors duration-300">COIDA Letter of Good Standing</span>
+                      </div>
+                      <div className="flex items-center">
+                        <span className="text-emerald-400 font-bold text-lg mr-2">R3500</span>
+                        <Link href="/services/coida" className="text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex items-center">
+                          <span className="mr-2">Choose Package</span>
+                          <ArrowRight className="h-4 w-4" />
+                        </Link>
+                      </div>
+                    </motion.div>
+                    <motion.div 
+                      initial={{ opacity: 0, x: 20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: 0.9, duration: 0.4 }}
+                      className="group flex items-center justify-between p-4 bg-white/5 hover:bg-white/10 rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300 cursor-pointer"
+                    >
+                      <div className="flex items-center">
+                        <div className="w-10 h-10 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                          <ShieldCheck className="h-5 w-5 text-white" />
+                        </div>
+                        <span className="text-white font-medium group-hover:text-cyan-300 transition-colors duration-300">Tax Clearance Certificate</span>
+                      </div>
+                      <div className="flex items-center">
+                        <span className="text-emerald-400 font-bold text-lg mr-2">R450</span>
+                        <Link href="/services/tax-clearance" className="text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex items-center">
+                          <span className="mr-2">Choose Package</span>
+                          <ArrowRight className="h-4 w-4" />
+                        </Link>
+                      </div>
+                    </motion.div>
+                    <motion.div 
+                      initial={{ opacity: 0, x: 20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: 1.0, duration: 0.4 }}
+                      className="group flex items-center justify-between p-4 bg-white/5 hover:bg-white/10 rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300 cursor-pointer"
+                    >
+                      <div className="flex items-center">
+                        <div className="w-10 h-10 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                          <Briefcase className="h-5 w-5 text-white" />
+                        </div>
+                        <span className="text-white font-medium group-hover:text-cyan-300 transition-colors duration-300">CSD Registration</span>
+                      </div>
+                      <div className="flex items-center">
+                        <span className="text-emerald-400 font-bold text-lg mr-2">R400</span>
+                        <Link href="/services/csd-registration" className="text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex items-center">
+                          <span className="mr-2">Choose Package</span>
+                          <ArrowRight className="h-4 w-4" />
+                        </Link>
+                      </div>
+                    </motion.div>
+                    <motion.div 
+                      initial={{ opacity: 0, x: 20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: 1.1, duration: 0.4 }}
+                      className="group flex items-center justify-between p-4 bg-white/5 hover:bg-white/10 rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300 cursor-pointer"
+                    >
+                      <div className="flex items-center">
+                        <div className="w-10 h-10 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                          <FileText className="h-5 w-5 text-white" />
+                        </div>
+                        <span className="text-white font-medium group-hover:text-cyan-300 transition-colors duration-300">Annual Returns Filling</span>
+                      </div>
+                      <div className="flex items-center">
+                        <span className="text-emerald-400 font-bold text-lg mr-2">R150</span>
+                        <Link href="/services/annual-returns" className="text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex items-center">
+                          <span className="mr-2">Choose Package</span>
+                          <ArrowRight className="h-4 w-4" />
+                        </Link>
+                      </div>
+                    </motion.div>
                   </div>
-                  
-                  <Button asChild className="w-full mt-8 bg-gradient-to-r from-emerald-500 via-cyan-500 to-purple-500 hover:from-emerald-600 hover:via-cyan-600 hover:to-purple-600 text-white shadow-xl transform hover:scale-105 transition-all duration-300 py-3 text-lg font-semibold">
-                    <Link href="/services">
-                      View All Services
-                      <ArrowRight className="ml-2 h-5 w-5" />
-                    </Link>
-                  </Button>
                 </motion.div>
                 
                 {/* Floating stats */}

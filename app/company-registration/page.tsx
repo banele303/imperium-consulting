@@ -79,6 +79,7 @@ export default function CompanyRegistrationPage() {
   ]
 
   return (
+
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       {/* Navigation */}
       <nav className="bg-white/80 backdrop-blur-md border-b sticky top-0 z-50">
@@ -179,7 +180,11 @@ export default function CompanyRegistrationPage() {
         </div>
       </section>
 
-      {/* Registration Types */}
+      {/* Registration Process */}
+      <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        </div>
+      {/* Registration Types & Pricing Packages */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -190,10 +195,10 @@ export default function CompanyRegistrationPage() {
             className="text-center mb-16"
           >
             <motion.h2 variants={fadeInUp} className="text-4xl font-bold text-gray-900 mb-4">
-              Company Registration Types
+              Company Registration Types & Packages
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Choose the right business structure for your needs
+              Choose the right business structure and package for your needs
             </motion.p>
           </motion.div>
 
@@ -202,7 +207,7 @@ export default function CompanyRegistrationPage() {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            className="grid lg:grid-cols-2 gap-8"
+            className="grid lg:grid-cols-2 gap-8 mb-12"
           >
             {registrationTypes.map((type, index) => (
               <motion.div key={index} variants={fadeInUp}>
@@ -235,62 +240,59 @@ export default function CompanyRegistrationPage() {
                       ))}
                     </ul>
                     <Button className="w-full mt-6" variant={type.popular ? "default" : "outline"}>
-                      Register {type.title.split(" ")[0]} Company
+                      Choose Package
                     </Button>
                   </CardContent>
                 </Card>
               </motion.div>
             ))}
           </motion.div>
-        </div>
-      </section>
 
-      {/* Registration Process */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Pricing Packages from Home Page */}
           <motion.div
             variants={staggerContainer}
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="grid lg:grid-cols-2 gap-8"
           >
-            <motion.h2 variants={fadeInUp} className="text-4xl font-bold text-gray-900 mb-4">
-              Our Registration Process
-            </motion.h2>
-            <motion.p variants={fadeInUp} className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Simple, transparent, and efficient - we handle everything for you
-            </motion.p>
-          </motion.div>
-
-          <motion.div
-            variants={staggerContainer}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
-          >
-            {process.map((step, index) => (
-              <motion.div key={index} variants={fadeInUp}>
-                <Card className="text-center h-full hover:shadow-lg transition-shadow duration-300">
-                  <CardHeader>
-                    <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-green-500 to-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">
-                      {step.step}
-                    </div>
-                    <CardTitle className="text-xl">{step.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="mb-4 text-green-600">{step.icon}</div>
-                    <p className="text-gray-600">{step.description}</p>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
+            <motion.div variants={fadeInUp}>
+              <Card className="h-full hover:shadow-lg transition-all duration-300 ring-2 ring-green-500">
+                <CardHeader>
+                  <CardTitle className="text-2xl">Business Registration</CardTitle>
+                  <CardDescription className="mt-2">Fast registration for your Private Company (Pty Ltd)</CardDescription>
+                  <Badge variant="secondary" className="text-lg font-bold">R650</Badge>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" /><span className="text-gray-700">Limited liability protection</span></li>
+                    <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" /><span className="text-gray-700">1-50 shareholders maximum</span></li>
+                    <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" /><span className="text-gray-700">Minimum 1 director required</span></li>
+                  </ul>
+                  <Button className="w-full mt-6" variant="default">Choose Package</Button>
+                </CardContent>
+              </Card>
+            </motion.div>
+            <motion.div variants={fadeInUp}>
+              <Card className="h-full hover:shadow-lg transition-all duration-300">
+                <CardHeader>
+                  <CardTitle className="text-2xl">Beneficial Ownership</CardTitle>
+                  <CardDescription className="mt-2">Comply with beneficial ownership regulations</CardDescription>
+                  <Badge variant="secondary" className="text-lg font-bold">R500</Badge>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" /><span className="text-gray-700">Expert compliance support</span></li>
+                    <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" /><span className="text-gray-700">Fast processing</span></li>
+                  </ul>
+                  <Button className="w-full mt-6" variant="default">Choose Package</Button>
+                </CardContent>
+              </Card>
+            </motion.div>
           </motion.div>
         </div>
       </section>
-
-      {/* Beneficial Ownership Section */}
+      {/* Beneficial Ownership Section - fixed structure */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -300,18 +302,7 @@ export default function CompanyRegistrationPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                Beneficial Ownership
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-600">
-                  {" "}
-                  Compliance
-                </span>
-              </h2>
-              <p className="text-xl text-gray-600 mb-6">
-                All our registration packages include beneficial ownership declarations to ensure full compliance with
-                South African company law requirements.
-              </p>
-              <ul className="space-y-4 mb-8">
+              <ul className="space-y-6 mb-6">
                 <li className="flex items-start gap-3">
                   <CheckCircle className="h-6 w-6 text-green-500 mt-0.5 flex-shrink-0" />
                   <div>
@@ -366,6 +357,7 @@ export default function CompanyRegistrationPage() {
                   <p className="text-sm text-gray-600 italic">
                     Let us handle the complexity - we ensure full compliance from day one.
                   </p>
+
                 </CardContent>
               </Card>
             </motion.div>
@@ -405,6 +397,9 @@ export default function CompanyRegistrationPage() {
           </motion.div>
         </div>
       </section>
+    {/* Close Registration Process Section */}
+      </section>
+      {/* Registration Types & Pricing Packages, Beneficial Ownership, and CTA sections are already properly closed above */}
     </div>
-  )
+  );
 }

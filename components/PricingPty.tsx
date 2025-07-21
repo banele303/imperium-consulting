@@ -14,7 +14,7 @@ const ptyPackages = [
       'Business Certificate',
     ],
     highlight: false,
-    cta: 'Get Started',
+    cta: 'Choose Package',
   },
   {
     name: 'RUNNER',
@@ -27,7 +27,7 @@ const ptyPackages = [
       'B-BBEE Certificate',
     ],
     highlight: true,
-    cta: 'Choose Plan',
+    cta: 'Choose Package',
   },
   {
     name: 'EMPIRE',
@@ -42,7 +42,7 @@ const ptyPackages = [
       'CSD Report',
     ],
     highlight: false,
-    cta: 'Get Started',
+    cta: 'Choose Package',
   },
 ]
 

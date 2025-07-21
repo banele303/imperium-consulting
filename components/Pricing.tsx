@@ -16,7 +16,7 @@ const packages = [
       'Beneficial Ownership Declaration',
     ],
     highlight: false,
-    cta: 'Get Started',
+    cta: 'Choose Package',
   },
   {
     name: 'Runner BO',
@@ -31,7 +31,7 @@ const packages = [
       'B-BBEE Certificate',
     ],
     highlight: true,
-    cta: 'Choose Plan',
+    cta: 'Choose Package',
   },
   {
     name: 'Empire BO',
@@ -48,7 +48,7 @@ const packages = [
       'Tax Clearance',
     ],
     highlight: false,
-    cta: 'Get Started',
+    cta: 'Choose Package',
   },
 ]
 
