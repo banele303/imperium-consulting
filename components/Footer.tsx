@@ -36,7 +36,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold text-gray-200 tracking-wider uppercase">Connect</h4>
             <div className="flex mt-4 space-x-4">
-              <a href="#" className="text-gray-400 hover:text-green-400 transition-colors"><Facebook className="h-6 w-6" /></a>
+              <a href="https://www.facebook.com/people/Imperial-Consulting/100070590741118/?rdid=EVSM6Y2OxzCTxinB&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CSj1qGqjq%2F" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-400 transition-colors"><Facebook className="h-6 w-6" /></a>
               <a href="#" className="text-gray-400 hover:text-green-400 transition-colors"><Twitter className="h-6 w-6" /></a>
               <a href="#" className="text-gray-400 hover:text-green-400 transition-colors"><Instagram className="h-6 w-6" /></a>
               <a href="#" className="text-gray-400 hover:text-green-400 transition-colors"><Linkedin className="h-6 w-6" /></a>
