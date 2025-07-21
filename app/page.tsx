@@ -44,15 +44,16 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-green-800 via-green-700 to-green-600 dark:from-green-900 dark:via-green-800 dark:to-green-600 pt-24 pb-32">
-        {/* Animated background elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-r from-green-600 to-green-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
-          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-r from-green-400 to-green-600 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-2000"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-green-600 to-green-500 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse animation-delay-4000"></div>
-        </div>
-        
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-32">
+        {/* Hero Background Image */}
+        <img
+          src="/imperium-bg.jpeg"
+          alt="Imperium Consulting Hero Background"
+          className="absolute inset-0 w-full h-full object-cover z-0"
+        />
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/60 z-10" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
             <motion.div 
               initial={{ opacity: 0, x: -50 }} 
