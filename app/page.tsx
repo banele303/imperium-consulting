@@ -191,13 +191,187 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* About Us Section */}
-      <section id="about" className="py-24 bg-white dark:bg-gray-900 transition-colors duration-300">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-                <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white">About Imperial Consulting</h2>
-                <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">At Imperial Consulting, we specialize in assisting entrepreneurs and businesses navigate South Africa's complex regulatory and compliance landscape with ease and confidence. Whether you're starting a new business or maintaining compliance, we provide fast, reliable, and affordable services to get you up and running and keep you there.</p>
-            </div>
+      {/* About Imperial Consulting Section - Enhanced */}
+      <section id="about" className="py-32 relative overflow-hidden bg-gradient-to-br from-white via-gray-50 to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-300">
+        {/* Background decoration */}
+        <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] opacity-25"></div>
+        <div className="absolute top-20 right-20 w-64 h-64 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+        <div className="absolute bottom-20 left-20 w-64 h-64 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse animation-delay-2000"></div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Content Section - Left */}
+            <motion.div 
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="space-y-8"
+            >
+              {/* Section Badge */}
+              <div className="inline-block px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 rounded-full text-blue-700 dark:text-blue-300 text-sm font-semibold">
+                🏢 About Imperial Consulting
+              </div>
+              
+              {/* Main Heading */}
+              <h2 className="text-4xl lg:text-5xl font-black text-gray-900 dark:text-white leading-tight">
+                Navigating South Africa's
+                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 mt-2">
+                  Business Landscape
+                </span>
+                <span className="block text-gray-900 dark:text-white mt-2">With Confidence</span>
+              </h2>
+              
+              {/* Description */}
+              <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                At Imperial Consulting, we specialize in assisting entrepreneurs and businesses navigate South Africa's complex regulatory and compliance landscape with ease and confidence. Whether you're starting a new business or maintaining compliance, we provide fast, reliable, and affordable services.
+              </p>
+              
+              {/* Key Features */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2, duration: 0.6 }}
+                  className="flex items-start space-x-4"
+                >
+                  <div className="w-10 h-10 bg-gradient-to-r from-green-500 to-emerald-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <CheckCircle className="h-5 w-5 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Fast Processing</h3>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">Quick turnaround times for all services</p>
+                  </div>
+                </motion.div>
+                
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.3, duration: 0.6 }}
+                  className="flex items-start space-x-4"
+                >
+                  <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <ShieldCheck className="h-5 w-5 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1">100% Compliance</h3>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">Ensuring full regulatory adherence</p>
+                  </div>
+                </motion.div>
+                
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.4, duration: 0.6 }}
+                  className="flex items-start space-x-4"
+                >
+                  <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Users className="h-5 w-5 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Expert Support</h3>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">Professional guidance every step</p>
+                  </div>
+                </motion.div>
+                
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.5, duration: 0.6 }}
+                  className="flex items-start space-x-4"
+                >
+                  <div className="w-10 h-10 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Award className="h-5 w-5 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 dark:text-white mb-1">Affordable Pricing</h3>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">Competitive rates for all services</p>
+                  </div>
+                </motion.div>
+              </div>
+              
+              {/* CTA Button */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.6, duration: 0.6 }}
+              >
+                <Button asChild size="lg" className="group bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 hover:from-blue-700 hover:via-purple-700 hover:to-pink-700 text-white shadow-xl transform hover:scale-105 transition-all duration-300 px-8 py-3">
+                  <Link href="/about">
+                    <span className="relative z-10">Learn More About Us</span>
+                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+                  </Link>
+                </Button>
+              </motion.div>
+            </motion.div>
+            
+            {/* Image Section - Right */}
+            <motion.div 
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+              className="relative"
+            >
+              <div className="relative">
+                {/* Main Image Container */}
+                <div className="relative overflow-hidden rounded-3xl shadow-2xl">
+                  <Image 
+                    src="/heroimage.jpeg" 
+                    alt="Imperial Consulting Office" 
+                    width={600} 
+                    height={500} 
+                    className="object-cover w-full h-[500px] transform hover:scale-105 transition-transform duration-700"
+                  />
+                  {/* Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+                  
+                  {/* Overlay Content */}
+                  <div className="absolute bottom-6 left-6 right-6">
+                    <div className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm p-4 rounded-xl">
+                      <h3 className="font-bold text-gray-900 dark:text-white mb-1">Professional Excellence</h3>
+                      <p className="text-sm text-gray-600 dark:text-gray-300">Trusted by 500+ South African businesses</p>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Floating Stats Cards */}
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.8, duration: 0.6 }}
+                  className="absolute -top-6 -left-6 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm p-4 rounded-2xl shadow-xl border border-white/50 dark:border-gray-700/50"
+                >
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">2019</div>
+                    <div className="text-xs text-gray-600 dark:text-gray-400">Established</div>
+                  </div>
+                </motion.div>
+                
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 1.0, duration: 0.6 }}
+                  className="absolute -bottom-6 -right-6 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm p-4 rounded-2xl shadow-xl border border-white/50 dark:border-gray-700/50"
+                >
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-green-600 dark:text-green-400">24/7</div>
+                    <div className="text-xs text-gray-600 dark:text-gray-400">Support</div>
+                  </div>
+                </motion.div>
+                
+                {/* Background Decoration */}
+                <div className="absolute -z-10 top-8 right-8 w-72 h-72 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 

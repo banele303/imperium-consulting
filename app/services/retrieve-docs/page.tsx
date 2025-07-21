@@ -15,7 +15,7 @@ const fadeInUp = {
 export default function RetrieveDocsPage() {
   const features = [
     "Retrieval of your company registration certificate (COR14.3).",
-    "Access to your company's Memorandum of Incorporation (MOI).",
+    "Access to your company&apos;s Memorandum of Incorporation (MOI).",
     "Obtaining a list of current directors.",
     "Fast and secure electronic delivery of documents.",
     "Assistance with identifying the documents you need.",
@@ -39,7 +39,7 @@ export default function RetrieveDocsPage() {
             transition={{ delay: 0.2 }}
             className="mt-4 text-lg md:text-xl text-blue-100 max-w-3xl mx-auto"
           >
-            Quickly and easily obtain official copies of your company's registration documents from CIPC.
+            Quickly and easily obtain official copies of your company&apos;s registration documents from CIPC.
           </motion.p>
         </div>
       </motion.section>
@@ -51,7 +51,7 @@ export default function RetrieveDocsPage() {
           <motion.div variants={fadeInUp} className="md:col-span-2">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Access Your Official Records</h2>
             <p className="text-lg text-gray-600 mb-8">
-              Whether you've misplaced your documents or need copies for a bank or contract, we can retrieve them directly from CIPC on your behalf.
+              Whether you&apos;ve misplaced your documents or need copies for a bank or contract, we can retrieve them directly from CIPC on your behalf.
             </p>
             <ul className="space-y-4">
               {features.map((feature, index) => (

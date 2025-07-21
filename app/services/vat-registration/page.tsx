@@ -14,7 +14,7 @@ const fadeInUp = {
 
 export default function VatRegistrationPage() {
   const features = [
-    "Assessment of your company's liability to register for VAT.",
+    "Assessment of your company&apos;s liability to register for VAT.",
     "Preparation and submission of the VAT 101 application to SARS.",
     "Liaison with SARS on your behalf to ensure a smooth process.",
     "Guidance on VAT compliance and record-keeping.",
@@ -51,7 +51,7 @@ export default function VatRegistrationPage() {
           <motion.div variants={fadeInUp} className="md:col-span-2">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Navigate VAT with Confidence</h2>
             <p className="text-lg text-gray-600 mb-8">
-              Registering for Value-Added Tax (VAT) is a critical step for growing businesses. We handle the entire application process, ensuring you meet all of SARS's requirements for compulsory or voluntary registration.
+              Registering for Value-Added Tax (VAT) is a critical step for growing businesses. We handle the entire application process, ensuring you meet all of SARS&apos;s requirements for compulsory or voluntary registration.
             </p>
             <ul className="space-y-4">
               {features.map((feature, index) => (

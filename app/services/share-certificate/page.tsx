@@ -18,7 +18,7 @@ export default function ShareCertificatePage() {
     "Accurate reflection of share ownership and class.",
     "Preparation for signing by company directors.",
     "Digital and print-ready formats.",
-    "Maintenance of the company's share register.",
+    "Maintenance of the company&apos;s share register.",
   ]
 
   return (
@@ -51,7 +51,7 @@ export default function ShareCertificatePage() {
           <motion.div variants={fadeInUp} className="md:col-span-2">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Formalize Ownership</h2>
             <p className="text-lg text-gray-600 mb-8">
-              A share certificate is the legal document that proves ownership of shares in a company. Our service ensures these are created accurately and professionally, reflecting the correct details of your company's shareholders.
+              A share certificate is the legal document that proves ownership of shares in a company. Our service ensures these are created accurately and professionally, reflecting the correct details of your company&apos;s shareholders.
             </p>
             <ul className="space-y-4">
               {features.map((feature, index) => (

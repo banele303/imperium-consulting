@@ -3,8 +3,30 @@
 import { motion } from 'framer-motion'
 import { Sun, Moon } from 'lucide-react'
 import { useTheme } from './ThemeProvider'
+import { useEffect, useState } from 'react'
 
 export default function ThemeToggle() {
+  const [mounted, setMounted] = useState(false)
+  
+  // Only access theme context after mounting
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  // Don't render anything until mounted to prevent hydration mismatch
+  if (!mounted) {
+    return (
+      <div className="relative p-3 rounded-full bg-gray-100 dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-600 shadow-md w-12 h-12 flex items-center justify-center">
+        <div className="w-5 h-5 bg-gray-300 dark:bg-gray-600 rounded-full animate-pulse"></div>
+      </div>
+    )
+  }
+
+  // Only use theme context after component is mounted
+  return <MountedThemeToggle />
+}
+
+function MountedThemeToggle() {
   const { theme, toggleTheme } = useTheme()
 
   return (

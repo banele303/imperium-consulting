@@ -5,6 +5,7 @@ import { Target, Eye, Users, Award, Clock, Shield, Phone, Mail, MapPin } from "l
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import Image from "next/image"
 import MissionVision from "@/components/MissionVision"
 
 const fadeInUp = {
@@ -33,7 +34,7 @@ export default function AboutPage() {
       icon: <Award className="h-8 w-8" />,
       title: "Proven Track Record",
       description:
-        "With years of experience across various industries, we've helped countless businesses achieve sustainable growth.",
+        "With years of experience across various industries, we&apos;ve helped countless businesses achieve sustainable growth.",
     },
     {
       icon: <Users className="h-8 w-8" />,
@@ -45,13 +46,13 @@ export default function AboutPage() {
       icon: <Clock className="h-8 w-8" />,
       title: "Results Driven Approach",
       description:
-        "We focus on achieving measurable results, whether it's boosting efficiency, increasing profitability, or accelerating growth.",
+        "We focus on achieving measurable results, whether it&apos;s boosting efficiency, increasing profitability, or accelerating growth.",
     },
     {
       icon: <Shield className="h-8 w-8" />,
       title: "Dedicated Partnership",
       description:
-        "We're more than just consultants—we're committed to your long-term success and work closely with you at every stage.",
+        "We&apos;re more than just consultants—we&apos;re committed to your long-term success and work closely with you at every stage.",
     },
   ]
 
@@ -72,7 +73,7 @@ export default function AboutPage() {
                 </span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                At Imperial Consulting, we specialize in assisting entrepreneurs and businesses navigate South Africa's
+                At Imperial Consulting, we specialize in assisting entrepreneurs and businesses navigate South Africa&apos;s
                 complex regulatory and compliance landscape with ease and confidence.
               </p>
               <div className="grid grid-cols-2 gap-6">
@@ -95,7 +96,43 @@ export default function AboutPage() {
               </div>
             </motion.div>
 
-            
+            {/* Hero Image Section */}
+            <motion.div 
+              initial={{ opacity: 0, x: 50 }} 
+              animate={{ opacity: 1, x: 0 }} 
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="relative"
+            >
+              <div className="relative overflow-hidden rounded-3xl shadow-2xl">
+                <Image 
+                  src="/imperiam2.jpeg" 
+                  alt="Imperial Consulting Team" 
+                  width={600} 
+                  height={500} 
+                  className="object-cover w-full h-[500px] transform hover:scale-105 transition-transform duration-700"
+                />
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+                
+                {/* Floating Badge */}
+                <div className="absolute top-6 left-6">
+                  <div className="bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
+                    <span className="text-sm font-semibold text-gray-900">🏆 Trusted Since 2019</span>
+                  </div>
+                </div>
+                
+                {/* Bottom Content */}
+                <div className="absolute bottom-6 left-6 right-6">
+                  <div className="bg-white/90 backdrop-blur-sm p-4 rounded-xl shadow-lg">
+                    <h3 className="font-bold text-gray-900 mb-1">Your Success Partner</h3>
+                    <p className="text-sm text-gray-600">Empowering South African businesses to thrive</p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Background Decoration */}
+              <div className="absolute -z-10 top-8 right-8 w-64 h-64 bg-gradient-to-r from-green-400 to-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -141,7 +178,7 @@ export default function AboutPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 text-lg leading-relaxed">
-                    To be South Africa's leading business support partner trusted by startups, SMEs, and contractors
+                    To be South Africa&apos;s leading business support partner trusted by startups, SMEs, and contractors
                     alike for seamless company registrations, compliance solutions, and professional service delivery.
                   </p>
                 </CardContent>
@@ -207,7 +244,7 @@ export default function AboutPage() {
           >
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Approach</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Whether you're a startup, contractor, or established company, we're here to ensure you meet all legal and
+              Whether you&apos;re a startup, contractor, or established company, we&apos;re here to ensure you meet all legal and
               regulatory requirements correctly, on time, and without hassle.
             </p>
           </motion.div>

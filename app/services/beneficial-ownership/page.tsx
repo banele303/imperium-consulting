@@ -39,7 +39,7 @@ export default function BeneficialOwnershipPage() {
             transition={{ delay: 0.2 }}
             className="mt-4 text-lg md:text-xl text-blue-100 max-w-3xl mx-auto"
           >
-            Ensure your company's compliance with CIPC regulations by accurately filing your Beneficial Ownership information.
+            Ensure your company&apos;s compliance with CIPC regulations by accurately filing your Beneficial Ownership information.
           </motion.p>
         </div>
       </motion.section>
@@ -74,7 +74,7 @@ export default function BeneficialOwnershipPage() {
             >
               <h3 className="text-2xl font-semibold text-gray-800 mb-4">Importance of Compliance</h3>
               <p className="text-gray-600">
-                Accurate Beneficial Ownership filing is a legal requirement. Non-compliance can lead to penalties and affect your company's good standing. Let our experts manage this for you.
+                Accurate Beneficial Ownership filing is a legal requirement. Non-compliance can lead to penalties and affect your company&apos;s good standing. Let our experts manage this for you.
               </p>
             </motion.div>
           </motion.div>

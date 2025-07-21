@@ -14,7 +14,7 @@ const fadeInUp = {
 
 export default function CsdRegistrationPage() {
   const features = [
-    "Full registration on the National Treasury's Central Supplier Database (CSD).",
+    "Full registration on the National Treasury&apos;s Central Supplier Database (CSD).",
     "Verification of company and director information.",
     "Linkage of your bank account and tax details.",
     "Assistance with industry classification codes.",

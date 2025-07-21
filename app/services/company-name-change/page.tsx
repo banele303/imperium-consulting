@@ -51,7 +51,7 @@ export default function CompanyNameChangePage() {
           <motion.div variants={fadeInUp} className="md:col-span-2">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">A New Identity for Your Business</h2>
             <p className="text-lg text-gray-600 mb-8">
-              Whether you're rebranding or simply need a new name, we handle the entire legal process of changing your company's registered name with CIPC, ensuring a smooth transition.
+              Whether you&apos;re rebranding or simply need a new name, we handle the entire legal process of changing your company&apos;s registered name with CIPC, ensuring a smooth transition.
             </p>
             <ul className="space-y-4">
               {features.map((feature, index) => (

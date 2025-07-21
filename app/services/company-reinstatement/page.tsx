@@ -14,7 +14,7 @@ const fadeInUp = {
 
 export default function CompanyReinstatementPage() {
   const features = [
-    "Assessment of the company's status with CIPC.",
+    "Assessment of the company&apos;s status with CIPC.",
     "Preparation and submission of all required re-instatement documents.",
     "Settlement of outstanding annual returns and penalties.",
     "Communication with CIPC on your behalf.",
