@@ -138,10 +138,15 @@ export default function HomePage() {
                       </div>
                       <div className="flex items-center">
                         <span className="text-emerald-400 font-bold text-lg mr-2">R650</span>
-                        <Link href="/services/business-registration" className="text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex items-center">
+                        <a
+                          href="https://wa.me/27634345345?text=I'm%20interested%20in%20your%20company%20registration%20package"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex items-center"
+                        >
                           <span className="mr-2">Choose Package</span>
                           <ArrowRight className="h-4 w-4" />
-                        </Link>
+                        </a>
                       </div>
                     </motion.div>
                     <motion.div 
@@ -158,10 +163,15 @@ export default function HomePage() {
                       </div>
                       <div className="flex items-center">
                         <span className="text-emerald-400 font-bold text-lg mr-2">R500</span>
-                        <Link href="/services/beneficial-ownership" className="text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex items-center">
+                        <a
+                          href="https://wa.me/27634345345?text=I'm%20interested%20in%20your%20company%20registration%20package"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex items-center"
+                        >
                           <span className="mr-2">Choose Package</span>
                           <ArrowRight className="h-4 w-4" />
-                        </Link>
+                        </a>
                       </div>
                     </motion.div>
                     <motion.div 
@@ -178,10 +188,15 @@ export default function HomePage() {
                       </div>
                       <div className="flex items-center">
                         <span className="text-emerald-400 font-bold text-lg mr-2">R3500</span>
-                        <Link href="/services/coida" className="text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex items-center">
+                        <a
+                          href="https://wa.me/27634345345?text=I'm%20interested%20in%20your%20company%20registration%20package"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex items-center"
+                        >
                           <span className="mr-2">Choose Package</span>
                           <ArrowRight className="h-4 w-4" />
-                        </Link>
+                        </a>
                       </div>
                     </motion.div>
                     <motion.div 
@@ -198,10 +213,15 @@ export default function HomePage() {
                       </div>
                       <div className="flex items-center">
                         <span className="text-emerald-400 font-bold text-lg mr-2">R450</span>
-                        <Link href="/services/tax-clearance" className="text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex items-center">
+                        <a
+                          href="https://wa.me/27634345345?text=I'm%20interested%20in%20your%20company%20registration%20package"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex items-center"
+                        >
                           <span className="mr-2">Choose Package</span>
                           <ArrowRight className="h-4 w-4" />
-                        </Link>
+                        </a>
                       </div>
                     </motion.div>
                     <motion.div 
@@ -218,10 +238,15 @@ export default function HomePage() {
                       </div>
                       <div className="flex items-center">
                         <span className="text-emerald-400 font-bold text-lg mr-2">R400</span>
-                        <Link href="/services/csd-registration" className="text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex items-center">
+                        <a
+                          href="https://wa.me/27634345345?text=I'm%20interested%20in%20your%20company%20registration%20package"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex items-center"
+                        >
                           <span className="mr-2">Choose Package</span>
                           <ArrowRight className="h-4 w-4" />
-                        </Link>
+                        </a>
                       </div>
                     </motion.div>
                     <motion.div 
@@ -238,10 +263,15 @@ export default function HomePage() {
                       </div>
                       <div className="flex items-center">
                         <span className="text-emerald-400 font-bold text-lg mr-2">R150</span>
-                        <Link href="/services/annual-returns" className="text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex items-center">
+                        <a
+                          href="https://wa.me/27634345345?text=I'm%20interested%20in%20your%20company%20registration%20package"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex items-center"
+                        >
                           <span className="mr-2">Choose Package</span>
                           <ArrowRight className="h-4 w-4" />
-                        </Link>
+                        </a>
                       </div>
                     </motion.div>
                   </div>

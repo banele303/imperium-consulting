@@ -240,13 +240,13 @@ export default function CompanyRegistrationPage() {
                       ))}
                     </ul>
                     <Button className="w-full mt-6" variant={type.popular ? "default" : "outline"} asChild>
-                      <Link
+                      <a
                         href="https://wa.me/27634345345?text=I'm%20interested%20in%20your%20company%20registration%20package"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         Choose Package
-                      </Link>
+                      </a>
                     </Button>
                   </CardContent>
                 </Card>
@@ -276,13 +276,13 @@ export default function CompanyRegistrationPage() {
                     <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" /><span className="text-gray-700">Minimum 1 director required</span></li>
                   </ul>
                   <Button className="w-full mt-6" variant="default" asChild>
-                    <Link
+                    <a
                       href="https://wa.me/27634345345?text=I'm%20interested%20in%20your%20company%20registration%20package"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       Choose Package
-                    </Link>
+                    </a>
                   </Button>
                 </CardContent>
               </Card>
@@ -300,13 +300,13 @@ export default function CompanyRegistrationPage() {
                     <li className="flex items-start gap-3"><CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" /><span className="text-gray-700">Fast processing</span></li>
                   </ul>
                   <Button className="w-full mt-6" variant="default" asChild>
-                    <Link
+                    <a
                       href="https://wa.me/27634345345?text=I'm%20interested%20in%20your%20company%20registration%20package"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       Choose Package
-                    </Link>
+                    </a>
                   </Button>
                 </CardContent>
               </Card>
