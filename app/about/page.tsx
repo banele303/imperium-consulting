@@ -189,7 +189,7 @@ export default function AboutPage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-gradient-to-br from-gray-900 to-blue-900 text-white">
+      <section className="py-20 bg-gradient-to-br from-green-950 to-green-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             variants={staggerContainer}
@@ -217,7 +217,7 @@ export default function AboutPage() {
               <motion.div key={index} variants={fadeInUp}>
                 <Card className="h-full hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-gray-800/80 border-gray-700">
                   <CardHeader>
-                    <div className="p-3 bg-gradient-to-r from-green-600 to-blue-700 rounded-lg text-white w-fit mb-4">
+                    <div className="p-3 bg-gradient-to-r from-green-800 to-green-700 rounded-lg text-white w-fit mb-4">
                       {value.icon}
                     </div>
                     <CardTitle className="text-xl text-white">{value.title}</CardTitle>
