@@ -518,7 +518,7 @@ export default function HomePage() {
             </div>
             <h2 className="text-5xl lg:text-6xl font-black text-gray-900 dark:text-white mb-6">
               Why Choose
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-600 to-red-600">
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-700 via-green-600 to-green-800">
                 Imperial?
               </span>
             </h2>
@@ -538,12 +538,12 @@ export default function HomePage() {
               <motion.div variants={fadeInUp} key={i}>
                 <div className="group relative bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm hover:bg-white/90 dark:hover:bg-gray-800/90 transition-all duration-500 h-full rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl border border-white/50 dark:border-gray-700/50 hover:border-white/80 dark:hover:border-gray-600/80">
                   {/* Gradient border effect */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-green-700 via-green-600 to-green-800 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm"></div>
                   <div className="relative bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm m-1 rounded-3xl p-8 h-full">
-                    <div className="w-16 h-16 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-16 h-16 bg-gradient-to-r from-green-700 via-green-600 to-green-800 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                       <item.icon className="h-8 w-8 text-white" />
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 group-hover:text-purple-700 dark:group-hover:text-purple-400 transition-colors duration-300">{item.title}</h3>
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 group-hover:text-green-700 dark:group-hover:text-green-500 transition-colors duration-300">{item.title}</h3>
                     <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{item.description}</p>
                   </div>
                 </div>

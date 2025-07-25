@@ -109,10 +109,10 @@ const FloatingActionButtons = () => {
           whileTap={{ scale: 0.95 }}
         >
           {/* Glow effect */}
-          <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blur-lg opacity-40 group-hover:opacity-60 transition-opacity duration-300"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-green-700 to-green-800 rounded-full blur-lg opacity-40 group-hover:opacity-60 transition-opacity duration-300"></div>
           
           {/* Main button */}
-          <div className="relative bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white p-4 rounded-full shadow-2xl transition-all duration-300 border-2 border-white/20 backdrop-blur-sm">
+          <div className="relative bg-gradient-to-r from-green-700 to-green-800 hover:from-green-800 hover:to-green-900 text-white p-4 rounded-full shadow-2xl transition-all duration-300 border-2 border-white/20 backdrop-blur-sm">
             <AnimatePresence mode="wait">
               {isOpen ? (
                 <motion.div
@@ -141,7 +141,7 @@ const FloatingActionButtons = () => {
           {/* Pulse animation when closed */}
           {!isOpen && (
             <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full"
+              className="absolute inset-0 bg-gradient-to-r from-green-700 to-green-800 rounded-full"
               animate={{
                 scale: [1, 1.2, 1],
                 opacity: [0.5, 0, 0.5],
