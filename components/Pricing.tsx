@@ -4,6 +4,9 @@ import { motion, Variants } from 'framer-motion'
 import { Check, ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
+// WhatsApp number in international format
+const whatsappNumber = "27733256354"
+
 const packages = [
   {
     name: 'Founder BO',
@@ -164,7 +167,12 @@ export default function Pricing() {
                   {/* CTA Button */}
                   <div className="p-8 mt-auto">
                     <Button 
-                      size="lg" 
+                      size="lg"
+                      onClick={() => {
+                        // Create WhatsApp message with package name
+                        const message = `I'm interested in the ${pkg.name} package.`;
+                        window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank');
+                      }}
                       className={`w-full font-bold text-lg transform hover:scale-105 transition-all duration-300 shadow-xl ${
                         pkg.highlight 
                           ? 'bg-gradient-to-r from-emerald-600 via-cyan-600 to-blue-600 hover:from-emerald-700 hover:via-cyan-700 hover:to-blue-700 text-white' 
@@ -213,7 +221,11 @@ export default function Pricing() {
               </p>
               
               <Button 
-                size="lg" 
+                size="lg"
+                onClick={() => {
+                  const message = "I'm interested in starting with your business registration services.";
+                  window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank');
+                }}
                 className="group bg-gradient-to-r from-emerald-600 via-cyan-600 to-blue-600 hover:from-emerald-700 hover:via-cyan-700 hover:to-blue-700 text-white font-bold text-lg px-10 py-4 shadow-2xl transform hover:scale-105 transition-all duration-300"
               >
                 <span className="relative z-10">Get Started Now</span>

@@ -39,7 +39,6 @@ const allServices = [
   { icon: Building, title: "Company Address Change", price: "R250", description: "Update registered company address.", category: "Corporate", href: "/services/company-address-change" },
   { icon: Users, title: "Director Removal", price: "R450", description: "Remove director from company records.", category: "Corporate", href: "/services/director-removal" },
   { icon: Users, title: "Adding Director", price: "R450", description: "Add new director to company.", category: "Corporate", href: "/services/adding-director" },
-  { icon: DollarSign, title: "VAT Registration", price: "R1200", description: "Value-Added Tax registration with SARS.", category: "Tax Services", href: "/services/vat-registration" },
 ]
 
 const categories = ["All", "Registration", "Compliance", "Corporate", "Tax Services"]

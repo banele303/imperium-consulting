@@ -66,8 +66,17 @@ export default function BBBECertificatePage() {
                 <p className="text-gray-600 text-lg">Starting from</p>
                 <p className="text-5xl font-bold text-green-600 my-2">{service.price}</p>
                 <p className="text-gray-500 mb-6">One-time fee</p>
-                <Button asChild size="lg" className="w-full bg-green-600 hover:bg-green-700 text-white shadow-lg transform hover:scale-105 transition-transform duration-300">
-                  <Link href="/contact">Get Started Now <ArrowRight className="ml-2" /></Link>
+                <Button 
+                  size="lg" 
+                  className="w-full bg-green-600 hover:bg-green-700 text-white shadow-lg transform hover:scale-105 transition-transform duration-300"
+                  onClick={() => {
+                    // WhatsApp number in international format
+                    const whatsappNumber = "27733256354";
+                    const message = "I'm interested in getting a B-BBEE Certificate.";
+                    window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank');
+                  }}
+                >
+                  Get Started Now <ArrowRight className="ml-2" />
                 </Button>
               </motion.div>
             </div>

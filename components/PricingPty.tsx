@@ -4,6 +4,9 @@ import { motion, Variants } from 'framer-motion'
 import { Check, Star, ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
+// WhatsApp number in international format
+const whatsappNumber = "27733256354"
+
 const ptyPackages = [
   {
     name: 'FOUNDER',
@@ -158,7 +161,12 @@ const PricingPty = () => {
                   {/* CTA Button */}
                   <div className="p-8 mt-auto">
                     <Button 
-                      size="lg" 
+                      size="lg"
+                      onClick={() => {
+                        // Create WhatsApp message with package name
+                        const message = `I'm interested in the ${pkg.name} Private Company Registration package.`;
+                        window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank');
+                      }} 
                       className={`w-full font-bold text-lg transform hover:scale-105 transition-all duration-300 shadow-xl ${
                         pkg.highlight 
                           ? 'bg-gradient-to-r from-green-600 via-green-600 to-green-700 hover:from-green-700 hover:via-green-700 hover:to-green-800 text-white' 

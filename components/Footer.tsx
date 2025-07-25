@@ -5,7 +5,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Facebook, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -37,9 +37,13 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-gray-200 tracking-wider uppercase">Connect</h4>
             <div className="flex mt-4 space-x-4">
               <a href="https://www.facebook.com/people/Imperial-Consulting/100070590741118/?rdid=EVSM6Y2OxzCTxinB&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CSj1qGqjq%2F" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-400 transition-colors"><Facebook className="h-6 w-6" /></a>
-              <a href="#" className="text-gray-400 hover:text-green-400 transition-colors"><Twitter className="h-6 w-6" /></a>
-              <a href="#" className="text-gray-400 hover:text-green-400 transition-colors"><Instagram className="h-6 w-6" /></a>
-              <a href="#" className="text-gray-400 hover:text-green-400 transition-colors"><Linkedin className="h-6 w-6" /></a>
+              <a href="https://www.instagram.com/imperial_consulting_sa/profilecard/?igsh=Z3k1NXo4MjJ3Y3hx" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-400 transition-colors"><Instagram className="h-6 w-6" /></a>
+              <a href="https://www.tiktok.com/@imperial_consulting_?_t=ZM-8yJxY4pEckA&_r=1" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-green-400 transition-colors">
+                {/* TikTok Icon (custom SVG) */}
+                <svg className="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64c.298-.002.596.027.89.09V9.4a6.33 6.33 0 00-1-.08 6.34 6.34 0 00-5.65 9.15A6.34 6.34 0 0016.59 14h.03V9.41a8.16 8.16 0 004.65 1.47V7.43a4.83 4.83 0 01-1.68-.74z" />
+                </svg>
+              </a>
             </div>
           </div>
         </div>

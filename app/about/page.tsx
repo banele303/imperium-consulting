@@ -189,7 +189,7 @@ export default function AboutPage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+      <section className="py-20 bg-gradient-to-br from-gray-900 to-blue-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             variants={staggerContainer}
@@ -198,10 +198,10 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <motion.h2 variants={fadeInUp} className="text-4xl font-bold text-gray-900 mb-4">
+            <motion.h2 variants={fadeInUp} className="text-4xl font-bold text-white mb-4">
               Why Choose Imperial Consulting?
             </motion.h2>
-            <motion.p variants={fadeInUp} className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <motion.p variants={fadeInUp} className="text-xl text-gray-300 max-w-3xl mx-auto">
               Our core values drive everything we do
             </motion.p>
           </motion.div>
@@ -215,15 +215,15 @@ export default function AboutPage() {
           >
             {values.map((value, index) => (
               <motion.div key={index} variants={fadeInUp}>
-                <Card className="h-full hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <Card className="h-full hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-gray-800/80 border-gray-700">
                   <CardHeader>
-                    <div className="p-3 bg-gradient-to-r from-green-500 to-blue-600 rounded-lg text-white w-fit mb-4">
+                    <div className="p-3 bg-gradient-to-r from-green-600 to-blue-700 rounded-lg text-white w-fit mb-4">
                       {value.icon}
                     </div>
-                    <CardTitle className="text-xl">{value.title}</CardTitle>
+                    <CardTitle className="text-xl text-white">{value.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-600">{value.description}</p>
+                    <p className="text-gray-300">{value.description}</p>
                   </CardContent>
                 </Card>
               </motion.div>
