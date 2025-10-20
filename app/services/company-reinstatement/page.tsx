@@ -79,8 +79,8 @@ export default function CompanyReinstatementPage() {
               <CardContent className="space-y-6">
                   <div className='p-4 rounded-lg border border-green-500 bg-green-50'>
                     <h4 className="font-bold text-lg text-gray-800">Re-instatement Service</h4>
-                    <p className="text-3xl font-bold text-green-600 my-2">R2,300</p>
-                    <p className="text-sm text-gray-600">Fee excludes outstanding annual return penalties.</p>
+                    <p className="text-3xl font-bold text-green-600 my-2">R800</p>
+                    <p className="text-sm text-gray-600">Professional company reinstatement service.</p>
                     <Button className="w-full mt-4 bg-green-600 hover:bg-green-700 text-white">
                       Start Re-instatement
                     </Button>

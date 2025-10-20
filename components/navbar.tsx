@@ -14,6 +14,7 @@ const services = [
   { name: "Tax Clearance Certificate", href: "/services/tax-clearance", description: "Obtain your tax clearance certificate." },
   { name: "CSD Registration", href: "/services/csd-registration", description: "Register on the Central Supplier Database." },
   { name: "Annual Returns Filling", href: "/services/annual-returns", description: "File your company's annual returns." },
+  { name: "Company Reinstatement", href: "/services/company-reinstatement", description: "Restore your deregistered company status." },
 ]
 
 export default function Navbar() {
@@ -118,7 +119,7 @@ export default function Navbar() {
               <div className="relative">
                 <button
                   onClick={() => setIsServicesOpen(!isServicesOpen)}
-                  className="w-full text-left flex items-center justify-between text-gray-700 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium"
+                  className="w-full text-left flex items-center justify-between text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 px-3 py-2 rounded-md text-base font-medium transition-colors"
                 >
                   All Services <ChevronDown className={`ml-1 h-5 w-5 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
                 </button>
@@ -128,7 +129,7 @@ export default function Navbar() {
                       <Link
                         key={service.name}
                         href={service.href}
-                        className="text-gray-600 hover:bg-gray-50 block px-3 py-2 rounded-md text-sm font-medium"
+                        className="text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800 block px-3 py-2 rounded-md text-sm font-medium transition-colors"
                       >
                         {service.name}
                       </Link>
@@ -136,10 +137,10 @@ export default function Navbar() {
                   </div>
                 )}
               </div>
-              <Link href="/about" className="text-gray-700 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium">
+              <Link href="/about" className="text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 block px-3 py-2 rounded-md text-base font-medium transition-colors">
                 Why Us
               </Link>
-              <Link href="/contact" className="text-gray-700 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium">
+              <Link href="/contact" className="text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 block px-3 py-2 rounded-md text-base font-medium transition-colors">
                 Contact
               </Link>
             </div>
