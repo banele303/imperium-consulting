@@ -29,7 +29,7 @@ const allServices = [
   { icon: Award, title: "COIDA Letter of Good Standing", price: "R3500", description: "Compensation for Occupational Injuries and Diseases Act compliance.", category: "Compliance", href: "/services/coida" },
   { icon: ShieldCheck, title: "Tax Clearance Certificate", price: "R450", description: "SARS tax clearance certificate application.", category: "Tax Services", href: "/services/tax-clearance" },
   { icon: CreditCard, title: "CSD Registration", price: "R400", description: "Central Supplier Database registration for government tenders.", category: "Registration", href: "/services/csd-registration" },
-  { icon: RefreshCw, title: "Company Re-instatement", price: "R800", description: "Restore deregistered company status.", category: "Corporate", href: "/services/company-reinstatement" },
+  { icon: RefreshCw, title: "Company Reinstatement", price: "R800", description: "Restore deregistered company status.", category: "Corporate", href: "/services/company-reinstatement" },
   { icon: Building, title: "NPC Registration", price: "R650", description: "Non-Profit Company registration.", category: "Registration", href: "/services/npc-registration" },
   { icon: FileText, title: "Share Certificate", price: "R350", description: "Official share certificate issuance.", category: "Corporate", href: "/services/share-certificate" },
   { icon: Search, title: "Company Name Change", price: "R600", description: "Change registered company name.", category: "Corporate", href: "/services/company-name-change" },

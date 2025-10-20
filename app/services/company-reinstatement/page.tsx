@@ -15,10 +15,10 @@ const fadeInUp = {
 export default function CompanyReinstatementPage() {
   const features = [
     "Assessment of the company&apos;s status with CIPC.",
-    "Preparation and submission of all required re-instatement documents.",
+    "Preparation and submission of all required reinstatement documents.",
     "Settlement of outstanding annual returns and penalties.",
     "Communication with CIPC on your behalf.",
-    "Confirmation of successful re-instatement.",
+    "Confirmation of successful reinstatement.",
   ]
 
   return (
@@ -32,7 +32,7 @@ export default function CompanyReinstatementPage() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1 variants={fadeInUp} className="text-4xl md:text-5xl font-bold tracking-tight">
-            Company Re-instatement
+            Company Reinstatement
           </motion.h1>
           <motion.p
             variants={fadeInUp}
@@ -51,7 +51,7 @@ export default function CompanyReinstatementPage() {
           <motion.div variants={fadeInUp} className="md:col-span-2">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Bring Your Company Back</h2>
             <p className="text-lg text-gray-600 mb-8">
-              If your company has been deregistered due to non-filing of annual returns, we can help you navigate the process of re-instatement with CIPC.
+              If your company has been deregistered due to non-filing of annual returns, we can help you navigate the process of reinstatement with CIPC.
             </p>
             <ul className="space-y-4">
               {features.map((feature, index) => (
@@ -78,11 +78,11 @@ export default function CompanyReinstatementPage() {
               </CardHeader>
               <CardContent className="space-y-6">
                   <div className='p-4 rounded-lg border border-green-500 bg-green-50'>
-                    <h4 className="font-bold text-lg text-gray-800">Re-instatement Service</h4>
-                    <p className="text-3xl font-bold text-green-600 my-2">R2,300</p>
+                    <h4 className="font-bold text-lg text-gray-800">Reinstatement Service</h4>
+                    <p className="text-3xl font-bold text-green-600 my-2">R800</p>
                     <p className="text-sm text-gray-600">Fee excludes outstanding annual return penalties.</p>
                     <Button className="w-full mt-4 bg-green-600 hover:bg-green-700 text-white">
-                      Start Re-instatement
+                      Start Reinstatement
                     </Button>
                   </div>
                 <div className="text-center">
