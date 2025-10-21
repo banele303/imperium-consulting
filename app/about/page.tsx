@@ -1,12 +1,13 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { motion, useInView } from "framer-motion"
 import { Target, Eye, Users, Award, Clock, Shield, Phone, Mail, MapPin } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
 import MissionVision from "@/components/MissionVision"
+import { useEffect, useRef, useState } from "react"
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
@@ -23,6 +24,47 @@ const staggerContainer = {
 }
 
 export default function AboutPage() {
+  // Simple CountUp component scoped to this page
+  type CountUpProps = { from?: number; to: number; duration?: number; className?: string; suffix?: string }
+  const CountUp = ({
+    from = 0,
+    to,
+    duration = 2,
+    className,
+    suffix = "",
+  }: CountUpProps) => {
+    const ref = useRef<HTMLSpanElement | null>(null)
+    const isInView = useInView(ref, { once: true, amount: 0.6 })
+    const [value, setValue] = useState(from)
+
+    useEffect(() => {
+      if (!isInView) return
+      let start: number | null = null
+      const startVal = from
+      const delta = to - from
+      let raf = 0 as number
+
+      const step = (timestamp: number) => {
+        if (start === null) start = timestamp
+        const progress = Math.min((timestamp - start) / (duration * 1000), 1)
+        setValue(Math.floor(startVal + delta * progress))
+        if (progress < 1) {
+          raf = requestAnimationFrame(step)
+        }
+      }
+
+      raf = requestAnimationFrame(step)
+      return () => cancelAnimationFrame(raf)
+    }, [isInView, from, to, duration])
+
+    return (
+      <span ref={ref} className={className}>
+        {value}
+        {suffix}
+      </span>
+    )
+  }
+
   const values = [
     {
       icon: <Target className="h-8 w-8" />,
@@ -78,7 +120,7 @@ export default function AboutPage() {
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-green-600">200+</div>
+                  <CountUp from={1} to={500} duration={2.5} suffix="+" className="text-3xl font-bold text-green-600" />
                   <div className="text-gray-600">Clients Assisted</div>
                 </div>
                 <div className="text-center">
