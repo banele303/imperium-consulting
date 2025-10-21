@@ -34,7 +34,7 @@ export default function AboutPage() {
       icon: <Award className="h-8 w-8" />,
       title: "Proven Track Record",
       description:
-        "With years of experience across various industries, we&apos;ve helped countless businesses achieve sustainable growth.",
+        "With years of experience across various industries, we've helped countless businesses achieve sustainable growth.",
     },
     {
       icon: <Users className="h-8 w-8" />,
@@ -46,13 +46,13 @@ export default function AboutPage() {
       icon: <Clock className="h-8 w-8" />,
       title: "Results Driven Approach",
       description:
-        "We focus on achieving measurable results, whether it&apos;s boosting efficiency, increasing profitability, or accelerating growth.",
+        "We focus on achieving measurable results, whether it's boosting efficiency, increasing profitability, or accelerating growth.",
     },
     {
       icon: <Shield className="h-8 w-8" />,
       title: "Dedicated Partnership",
       description:
-        "We&apos;re more than just consultants—we&apos;re committed to your long-term success and work closely with you at every stage.",
+        "We're more than just consultants—we're committed to your long-term success and work closely with you at every stage.",
     },
   ]
 
@@ -73,7 +73,7 @@ export default function AboutPage() {
                 </span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                At Imperial Consulting, we specialize in assisting entrepreneurs and businesses navigate South Africa&apos;s
+                At Imperial Consulting, we specialize in assisting entrepreneurs and businesses navigate South Africa's
                 complex regulatory and compliance landscape with ease and confidence.
               </p>
               <div className="grid grid-cols-2 gap-6">
@@ -178,7 +178,7 @@ export default function AboutPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 text-lg leading-relaxed">
-                    To be South Africa&apos;s leading business support partner trusted by startups, SMEs, and contractors
+                    To be South Africa's leading business support partner trusted by startups, SMEs, and contractors
                     alike for seamless company registrations, compliance solutions, and professional service delivery.
                   </p>
                 </CardContent>
@@ -244,7 +244,7 @@ export default function AboutPage() {
           >
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Approach</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Whether you&apos;re a startup, contractor, or established company, we&apos;re here to ensure you meet all legal and
+              Whether you are a startup, contractor, or established company, we're here to ensure you meet all legal and
               regulatory requirements correctly, on time, and without hassle.
             </p>
           </motion.div>

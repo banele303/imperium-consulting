@@ -241,7 +241,7 @@ export default function CompanyRegistrationPage() {
                     </ul>
                     <Button className="w-full mt-6" variant={type.popular ? "default" : "outline"} asChild>
                       <a
-                        href="https://wa.me/27634345345?text=I'm%20interested%20in%20your%20company%20registration%20package"
+                        href="https://wa.me/27733256354?text=I'm%20interested%20in%20your%20company%20registration%20package"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -277,7 +277,7 @@ export default function CompanyRegistrationPage() {
                   </ul>
                   <Button className="w-full mt-6" variant="default" asChild>
                     <a
-                      href="https://wa.me/27634345345?text=I'm%20interested%20in%20your%20company%20registration%20package"
+                      href="https://wa.me/27733256354?text=I'm%20interested%20in%20your%20company%20registration%20package"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -301,7 +301,7 @@ export default function CompanyRegistrationPage() {
                   </ul>
                   <Button className="w-full mt-6" variant="default" asChild>
                     <a
-                      href="https://wa.me/27634345345?text=I'm%20interested%20in%20your%20company%20registration%20package"
+                      href="https://wa.me/27733256354?text=I'm%20interested%20in%20your%20company%20registration%20package"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

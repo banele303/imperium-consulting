@@ -140,7 +140,7 @@ export default function HomePage() {
                       <div className="flex items-center">
                         <span className="text-emerald-400 font-bold text-lg mr-2">R650</span>
                         <a
-                          href="https://wa.me/27634345345?text=I'm%20interested%20in%20your%20company%20registration%20package"
+                          href="https://wa.me/27733256354?text=I'm%20interested%20in%20your%20company%20registration%20package"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex items-center"
@@ -165,7 +165,7 @@ export default function HomePage() {
                       <div className="flex items-center">
                         <span className="text-emerald-400 font-bold text-lg mr-2">R500</span>
                         <a
-                          href="https://wa.me/27634345345?text=I'm%20interested%20in%20your%20company%20registration%20package"
+                          href="https://wa.me/27733256354?text=I'm%20interested%20in%20your%20company%20registration%20package"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex items-center"
@@ -190,7 +190,7 @@ export default function HomePage() {
                       <div className="flex items-center">
                         <span className="text-emerald-400 font-bold text-lg mr-2">R3500</span>
                         <a
-                          href="https://wa.me/27634345345?text=I'm%20interested%20in%20your%20company%20registration%20package"
+                          href="https://wa.me/27733256354?text=I'm%20interested%20in%20your%20company%20registration%20package"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex items-center"
@@ -215,7 +215,7 @@ export default function HomePage() {
                       <div className="flex items-center">
                         <span className="text-emerald-400 font-bold text-lg mr-2">R450</span>
                         <a
-                          href="https://wa.me/27634345345?text=I'm%20interested%20in%20your%20company%20registration%20package"
+                          href="https://wa.me/27733256354?text=I'm%20interested%20in%20your%20company%20registration%20package"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex items-center"
@@ -240,7 +240,7 @@ export default function HomePage() {
                       <div className="flex items-center">
                         <span className="text-emerald-400 font-bold text-lg mr-2">R400</span>
                         <a
-                          href="https://wa.me/27634345345?text=I'm%20interested%20in%20your%20company%20registration%20package"
+                          href="https://wa.me/27733256354?text=I'm%20interested%20in%20your%20company%20registration%20package"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex items-center"
@@ -265,7 +265,7 @@ export default function HomePage() {
                       <div className="flex items-center">
                         <span className="text-emerald-400 font-bold text-lg mr-2">R150</span>
                         <a
-                          href="https://wa.me/27634345345?text=I'm%20interested%20in%20your%20company%20registration%20package"
+                          href="https://wa.me/27733256354?text=I'm%20interested%20in%20your%20company%20registration%20package"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex items-center"
@@ -290,7 +290,7 @@ export default function HomePage() {
                       <div className="flex items-center">
                         <span className="text-emerald-400 font-bold text-lg mr-2">R800</span>
                         <a
-                          href="https://wa.me/27634345345?text=I'm%20interested%20in%20your%20company%20reinstatement%20service"
+                          href="https://wa.me/27733256354?text=I'm%20interested%20in%20your%20company%20reinstatement%20service"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex items-center"
