@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight, CheckCircle, Phone, Mail, MapPin, Users, Award, Clock, Briefcase, FileText, ShieldCheck, Star, Target, Eye, RefreshCw } from "lucide-react"
+import { ArrowRight, CheckCircle, Phone, Mail, MapPin, Users, Award, Clock, Briefcase, FileText, ShieldCheck, Star, Target, Eye, RefreshCw, Construction } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import Link from "next/link"
@@ -32,6 +32,7 @@ const services = [
     { title: "Annual Returns Filling", price: "R150", icon: FileText },
     { title: "Company Reinstatement", price: "R900", icon: RefreshCw },
     { title: "B-BBEE Certificate", price: "R300", icon: Award },
+    { title: "CIDB Registration Grade 1", price: "R1000", icon: Construction },
 ];
 
 const whyChooseUs = [

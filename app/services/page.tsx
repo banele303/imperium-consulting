@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from "framer-motion"
-import { Briefcase, FileText, Award, ShieldCheck, Users, RefreshCw, Search, DollarSign, Building, CreditCard } from "lucide-react"
+import { Briefcase, FileText, Award, ShieldCheck, Users, RefreshCw, Search, DollarSign, Building, CreditCard, Construction } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -39,6 +39,7 @@ const allServices = [
   { icon: Building, title: "Company Address Change", price: "R250", description: "Update registered company address.", category: "Corporate", href: "/services/company-address-change" },
   { icon: Users, title: "Director Removal", price: "R450", description: "Remove director from company records.", category: "Corporate", href: "/services/director-removal" },
   { icon: Users, title: "Adding Director", price: "R450", description: "Add new director to company.", category: "Corporate", href: "/services/adding-director" },
+  { icon: Construction, title: "CIDB Registration Grade 1", price: "R1000", description: "Construction Industry Development Board Grade 1 registration.", category: "Registration", href: "/services/cidb-registration" },
 ]
 
 const categories = ["All", "Registration", "Compliance", "Corporate", "Tax Services"]
