@@ -327,6 +327,31 @@ export default function HomePage() {
                         </a>
                       </div>
                     </motion.div>
+                    <motion.div 
+                      initial={{ opacity: 0, x: 20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: 1.4, duration: 0.4 }}
+                      className="group flex items-center justify-between p-4 bg-white/5 hover:bg-white/10 rounded-xl border border-white/10 hover:border-white/20 transition-all duration-300 cursor-pointer"
+                    >
+                      <div className="flex items-center">
+                        <div className="w-10 h-10 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                          <Construction className="h-5 w-5 text-white" />
+                        </div>
+                        <span className="text-white font-medium group-hover:text-cyan-300 transition-colors duration-300">CIDB Registration Grade 1</span>
+                      </div>
+                      <div className="flex items-center">
+                        <span className="text-emerald-400 font-bold text-lg mr-2">R1000</span>
+                        <a
+                          href="https://wa.me/27733256354?text=I'm%20interested%20in%20your%20CIDB%20registration%20grade%201%20service"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-white/60 group-hover:text-white group-hover:translate-x-1 transition-all duration-300 flex items-center"
+                        >
+                          <span className="mr-2">Choose Package</span>
+                          <ArrowRight className="h-4 w-4" />
+                        </a>
+                      </div>
+                    </motion.div>
                   </div>
                 </motion.div>
                 
