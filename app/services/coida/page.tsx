@@ -80,7 +80,7 @@ export default function CoidaPage() {
               <CardContent className="space-y-6">
                   <div className='p-4 rounded-lg border border-green-500 bg-green-50'>
                     <h4 className="font-bold text-lg text-gray-800">Letter of Good Standing</h4>
-                    <p className="text-3xl font-bold text-green-600 my-2">R3,500</p>
+                    <p className="text-3xl font-bold text-green-600 my-2">R3,600</p>
                     <p className="text-sm text-gray-600">Includes registration and first-year assessment fee.</p>
                     <Button className="w-full mt-4 bg-green-600 hover:bg-green-700 text-white">
                       Apply Now

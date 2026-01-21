@@ -89,7 +89,7 @@ export default function BeneficialOwnershipPage() {
               <CardContent className="space-y-6">
                   <div className='p-4 rounded-lg border border-green-500 bg-green-50'>
                     <h4 className="font-bold text-lg text-gray-800">Beneficial Ownership Filing</h4>
-                    <p className="text-3xl font-bold text-green-600 my-2">R500</p>
+                    <p className="text-3xl font-bold text-green-600 my-2">R550</p>
                     <p className="text-sm text-gray-600">One-time fee for complete filing service.</p>
                     <Button className="w-full mt-4 bg-green-600 hover:bg-green-700 text-white">
                       Proceed with Filing
