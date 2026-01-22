@@ -15,6 +15,7 @@ const services = [
   { name: "CSD Registration", href: "/services/csd-registration", description: "Register on the Central Supplier Database." },
   { name: "Annual Returns Filling", href: "/services/annual-returns", description: "File your company's annual returns." },
   { name: "Company Reinstatement", href: "/services/company-reinstatement", description: "Restore your deregistered company status." },
+  { name: "CIDB Registration Grade 1 Class of Work R 1000", href: "/services/cidb-registration", description: "Get your CIDB Grade 1 registration." },
 ]
 
 export default function Navbar() {

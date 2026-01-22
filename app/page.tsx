@@ -32,7 +32,7 @@ const services = [
     { title: "Annual Returns Filling", price: "R150", icon: FileText },
     { title: "Company Reinstatement", price: "R900", icon: RefreshCw },
     { title: "B-BBEE Certificate", price: "R300", icon: Award },
-    { title: "CIDB Registration Grade 1", price: "R1000", icon: Construction },
+    { title: "CIDB Registration Grade 1 Class of Work R 1000", price: "R1000", icon: Construction },
 ];
 
 const whyChooseUs = [
@@ -337,7 +337,7 @@ export default function HomePage() {
                         <div className="w-10 h-10 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded-lg flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                           <Construction className="h-5 w-5 text-white" />
                         </div>
-                        <span className="text-white font-medium group-hover:text-cyan-300 transition-colors duration-300">CIDB Registration Grade 1</span>
+                        <span className="text-white font-medium group-hover:text-cyan-300 transition-colors duration-300">CIDB Registration Grade 1 Class of Work R 1000</span>
                       </div>
                       <div className="flex items-center">
                         <span className="text-emerald-400 font-bold text-lg mr-2">R1000</span>

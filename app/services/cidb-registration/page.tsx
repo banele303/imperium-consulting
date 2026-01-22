@@ -33,7 +33,7 @@ export default function CidbRegistrationPage() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1 variants={fadeInUp} className="text-4xl md:text-5xl font-bold tracking-tight">
-            CIDB Registration
+            CIDB Registration Grade 1 Class of Work R 1000
           </motion.h1>
           <motion.p
             variants={fadeInUp}
@@ -50,7 +50,7 @@ export default function CidbRegistrationPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-12">
           {/* Left Column - Features */}
           <motion.div variants={fadeInUp} className="md:col-span-2">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">CIDB Grade 1 Registration</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">CIDB Registration Grade 1 Class of Work</h2>
             <p className="text-lg text-gray-600 mb-8">
               CIDB registration is essential for contractors who wish to submit tenders for public sector construction contracts in South Africa. Grade 1 is the entry-level registration for emerging contractors.
             </p>

@@ -4,7 +4,12 @@ import { motion } from "framer-motion"
 import { FileText, CheckCircle, AlertCircle } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
-const serviceRequirements = {
+interface ServiceRequirement {
+  title: string
+  requirements: string[]
+}
+
+const serviceRequirements: Record<string, ServiceRequirement> = {
   "business-registration": {
     title: "Company Registration",
     requirements: [
@@ -27,7 +32,7 @@ const serviceRequirements = {
     ]
   },
   "cidb": {
-    title: "CIDB Registration",
+    title: "CIDB Registration Grade 1 Class of Work R 1000",
     requirements: [
       "CSD Report",
       "SARS Tax Returns must be compliant (Mandatory)",
@@ -121,11 +126,13 @@ const fadeInUp = {
 }
 
 export default function ServiceRequirements({ serviceKey, showAll = false, className = "" }: ServiceRequirementsProps) {
-  const servicesToShow = showAll 
-    ? Object.entries(serviceRequirements)
-    : serviceKey && serviceRequirements[serviceKey as keyof typeof serviceRequirements]
-      ? [[serviceKey, serviceRequirements[serviceKey as keyof typeof serviceRequirements]]]
-      : []
+  let servicesToShow: [string, ServiceRequirement][] = []
+
+  if (showAll) {
+    servicesToShow = Object.entries(serviceRequirements)
+  } else if (serviceKey && serviceRequirements[serviceKey]) {
+    servicesToShow = [[serviceKey, serviceRequirements[serviceKey]]]
+  }
 
   if (!showAll && !serviceKey) return null
 
